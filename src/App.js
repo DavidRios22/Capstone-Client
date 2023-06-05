@@ -1,16 +1,19 @@
 import "./App.css"
-import { Routes, Route } from "react-router-dom"
-import Home from "./Components/Home"
-import Login from "./Components/Login"
-import Register from "./Components/Register"
+import { Provider } from "react-redux"
+import { BrowserRouter } from "react-router-dom"
+import Router from "./Router"
+import store from "./Redux/store"
+// import Navigation from "./Components/Navigation"
+
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/register" element={<Register />} />
-    </Routes>
+    <Provider store={store}>
+      <BrowserRouter>
+        {/* <Navigation /> */}
+        <Router />
+      </BrowserRouter>
+    </Provider>
   )
 }
 
