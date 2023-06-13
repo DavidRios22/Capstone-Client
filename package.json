@@ -16,7 +16,6 @@
     "axios": "^1.4.0",
     "cookie": "^0.5.0",
     "dayjs": "^1.11.7",
-    "gh-pages": "^5.0.0",
     "javascript-time-ago": "^2.5.9",
     "mdb-react-ui-kit": "^6.1.0",
     "react": "^18.2.0",
@@ -31,7 +30,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -53,5 +52,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }

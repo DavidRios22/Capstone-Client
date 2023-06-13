@@ -8,14 +8,12 @@ import { useState, useEffect } from "react"
 import CardActions from "@mui/material/CardActions"
 import CardContent from "@mui/material/CardContent"
 import Typography from "@mui/material/Typography"
-import Checkbox from "@mui/material/Checkbox"
 import DeleteIcon from "@mui/icons-material/Delete"
 import { Grid } from "@mui/material"
 import Box from "@mui/material/Box"
 import Card from "@mui/material/Card"
 import Alert from "@mui/material/Alert"
-import TimeAgo from "javascript-time-ago"
-import en from "javascript-time-ago/locale/en"
+
 
 export default function Habits() {
   const cookies = cookie.parse(document.cookie)
@@ -29,8 +27,7 @@ export default function Habits() {
   const [errorMsg, setErrorMsg] = useState(false)
   const [errorMsg2, setErrorMsg2] = useState(false)
 
-  TimeAgo.addDefaultLocale(en)
-  const timeAgo = new TimeAgo("en-US")
+
 
   //   const [checked, setChecked] = useState(false)
 
