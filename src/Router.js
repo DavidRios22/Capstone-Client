@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route, HashRouter } from "react-router-dom"
 import Home from "./Components/Home"
 import Register from "./Components/Register"
 import Weights from "./Components/Weights"
