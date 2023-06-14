@@ -27,9 +27,7 @@ import store from "./Redux/store"
 function App() {
   return (
     <Provider store={store}>
-      <HashRouter>
         <Router />
-      </HashRouter>
     </Provider>
   )
 }

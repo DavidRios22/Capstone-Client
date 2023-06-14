@@ -6,12 +6,14 @@ import Habits from "./Components/Habits"
 
 const Router = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route exact path="/register" element={<Register />} />
-      <Route path="/weight" element={<Weights />} />
-      <Route path="/habits" element={<Habits/>} />
-    </Routes>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route exact path="/register" element={<Register />} />
+        <Route path="/weight" element={<Weights />} />
+        <Route path="/habits" element={<Habits />} />
+      </Routes>
+    </HashRouter>
   )
 }
 
